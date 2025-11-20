@@ -3,7 +3,8 @@ Unit tests for the add operation.
 """
 import pytest
 
-from src.calculator.add import add
+from src.main import add
+
 
 @pytest.mark.parametrize("num1, num2, expected", [
     # T008: Adding positive integers
