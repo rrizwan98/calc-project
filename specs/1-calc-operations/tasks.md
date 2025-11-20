@@ -26,10 +26,10 @@
 
 **Purpose**: Project initialization and basic structure
 
-- [ ] T001 Create `src/` and `tests/` directories if they don't exist
-- [ ] T002 Initialize a new `uv` project in the root directory (creating `pyproject.toml`) and install `pytest` and `ruff` with `uv add pytest ruff`
-- [ ] T003 Create `src/calculator/__init__.py` to define the calculator module
-- [ ] T004 Create `src/main.py` for the command-line interface entry point
+- [X] T001 Create `src/` and `tests/` directories if they don't exist
+- [X] T002 Initialize a new `uv` project in the root directory (creating `pyproject.toml`) and install `pytest` and `ruff` with `uv add pytest ruff`
+- [X] T003 Create `src/calculator/__init__.py` to define the calculator module
+- [X] T004 Create `src/main.py` for the command-line interface entry point
 
 ---
 
@@ -39,8 +39,8 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T005 Implement basic argument parsing for operations in `src/main.py`
-- [ ] T006 Configure `pytest` and `ruff` for code quality (using the installed packages) in `pyproject.toml`
+- [X] T005 Implement basic argument parsing for operations in `src/main.py`
+- [X] T006 Configure `pytest` and `ruff` for code quality (using the installed packages) in `pyproject.toml`
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -54,18 +54,18 @@
 
 ### Tests for User Story 1 ⚠️
 
-- [ ] T007 [US1] Create unit test file for add operation in `tests/unit/calculator/test_add.py`
-- [ ] T008 [US1] Implement test cases for adding positive integers (e.g., 5, 3 -> 8) in `tests/unit/calculator/test_add.py`
-- [ ] T009 [US1] Implement test cases for adding negative integers (e.g., -5, -3 -> -8) in `tests/unit/calculator/test_add.py`
-- [ ] T010 [US1] Implement test cases for adding positive and negative integers (e.g., 5, -3 -> 2) in `tests/unit/calculator/test_add.py`
-- [ ] T011 [US1] Implement test cases for adding numbers with decimals (e.g., 2.5, 3.2 -> 5.7) in `tests/unit/calculator/test_add.py`
-- [ ] T012 [US1] Implement test cases for adding zero values (e.g., 5, 0 -> 5) in `tests/unit/calculator/test_add.py`
+- [X] T007 [US1] Create unit test file for add operation in `tests/unit/calculator/test_add.py`
+- [X] T008 [US1] Implement test cases for adding positive integers (e.g., 5, 3 -> 8) in `tests/unit/calculator/test_add.py`
+- [X] T009 [US1] Implement test cases for adding negative integers (e.g., -5, -3 -> -8) in `tests/unit/calculator/test_add.py`
+- [X] T010 [US1] Implement test cases for adding positive and negative integers (e.g., 5, -3 -> 2) in `tests/unit/calculator/test_add.py`
+- [X] T011 [US1] Implement test cases for adding numbers with decimals (e.g., 2.5, 3.2 -> 5.7) in `tests/unit/calculator/test_add.py`
+- [X] T012 [US1] Implement test cases for adding zero values (e.g., 5, 0 -> 5) in `tests/unit/calculator/test_add.py`
 
 ### Implementation for User Story 1
 
-- [ ] T013 [US1] Create `src/calculator/add.py` with `add(num1: float, num2: float) -> float` function
-- [ ] T014 [US1] Implement `add` function logic in `src/calculator/add.py`
-- [ ] T015 [US1] Integrate `add` function into `src/main.py` CLI dispatch
+- [X] T013 [US1] Create `src/calculator/add.py` with `add(num1: float, num2: float) -> float` function
+- [X] T014 [US1] Implement `add` function logic in `src/calculator/add.py`
+- [X] T015 [US1] Integrate `add` function into `src/main.py` CLI dispatch
 
 **Checkpoint**: User Story 1 is fully functional and testable independently
 
