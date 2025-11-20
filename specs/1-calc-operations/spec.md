@@ -69,28 +69,6 @@ User can divide two numbers, excluding the case of division by zero.
 
 ---
 
-### Edge Cases
-
-- **What happens when numbers are very large or very small (overflow/underflow)?**: The system will handle these based on Python's native float precision.
-- **How does system handle non-numeric input?**: It is assumed that inputs will always be valid numeric types; input validation will be handled by the calling context.
-
-## Requirements *(mandatory)*
-
-### Functional Requirements
-
-- **FR-001**: The system MUST provide an "add" operation that takes two numeric inputs and returns their sum.
-- **FR-002**: The system MUST provide a "subtract" operation that takes two numeric inputs and returns their difference.
-- **FR-003**: The system MUST provide a "multiply" operation that takes two numeric inputs and returns their product.
-- **FR-004**: The system MUST provide a "divide" operation that takes two numeric inputs (where the divisor is not zero) and returns their quotient.
-- **FR-005**: All numeric inputs and outputs MUST support both whole numbers and decimals.
-- **FR-006**: All functions implementing operations MUST use clear type annotations to ensure maintainability and correctness.
-- **FR-007**: All functions implementing operations MUST have clear docstrings.
-- **FR-008**: All operations MUST have full test coverage.
-
-### Key Entities
-
-*(This section is omitted as no explicit entities beyond "numbers" are defined in the feature description.)*
-
 ## Success Criteria *(mandatory)*
 
 ### Measurable Outcomes
@@ -99,3 +77,12 @@ User can divide two numbers, excluding the case of division by zero.
 - **SC-002**: 100% test coverage is achieved for all "add", "subtract", "multiply", and "divide" operations.
 - **SC-003**: Type checking of the codebase passes without errors using an industry-standard static analysis tool.
 - **SC-004**: The implementation of calculator operations adheres to all rules and principles specified in the project constitution.
+
+## Clarifications
+### Session 2025-11-20
+- Q: How should the system handle numeric inputs that exceed Python's native float precision, or results that lead to overflow/underflow? → A: Rely on Python's native float precision and default overflow/underflow behavior.
+
+### Edge Cases
+
+- **What happens when numbers are very large or very small (overflow/underflow)?**: The system will rely on Python's native float precision and its default behavior for very large or very small numbers, including potential approximations or raising exceptions such as `OverflowError`.
+- **How does system handle non-numeric input?**: It is assumed that inputs will always be valid numeric types; input validation will be handled by the calling context.
